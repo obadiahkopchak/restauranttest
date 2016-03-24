@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :chirps
+  resources :users
   resources :restaurants
-  root 'restaurants#index'
+  root 'users#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
